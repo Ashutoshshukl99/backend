@@ -13,7 +13,7 @@ app.use(express.json())
 app.use('/api/auth', require('./routes/auth'))
 
 app.use("/", (req, res)=>{
-  res.json({message: "Hello I am started"});
+  res.json("Hello I am Started");
 })
 
 app.listen(port, () => {
