@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use("/", (req, res)=>{
-  res.json("Server Started Successfully")
+  res.json("Server Started Successfully Done")
 })
 
 app.use('/api/auth', require('./routes/auth'))
