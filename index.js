@@ -12,6 +12,10 @@ app.use(express.json())
 
 app.use('/api/auth', require('./routes/auth'))
 
+app.use("/", (req, res)=>{
+  res.send("Started")
+})
+
 app.listen(port, () => {
   console.log(`Funweb backend listening on port http://localhost:${port}`)
 })
